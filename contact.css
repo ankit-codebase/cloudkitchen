@@ -1,0 +1,77 @@
+/* Contact Section */
+#contact {
+  background-color: #fffdf6;
+  padding: 50px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#contact #container {
+  max-width: 670px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  color: #333;
+}
+
+#contact h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#contact h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#contact a {
+  color: #555;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#contact a:hover {
+  color: #ff7a00;
+}
+
+#contact p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+#contact #container p:last-child {
+  margin-bottom: 0;
+}
+
+/* Divider line between contact info */
+#contact #container h3:not(:first-of-type) {
+  border-top: 1px solid #f2f2f2;
+  padding-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact #container {
+    max-width: 90%;
+    padding: 25px 20px;
+  }
+
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  #contact h3 {
+    font-size: 1rem;
+  }
+}
