@@ -1,0 +1,132 @@
+/* Compact Order Section / Cart Container */
+#cart {
+  max-width: 600px; /* wider than before */
+  width: 90%; /* responsive for smaller screens */
+  margin: 40px auto;
+  padding: 25px 20px;
+  background-color: #fffdf6;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s; /* 3D hover effect */
+}
+
+/* 3D Hover Effect */
+#cart:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 123, 255, 0.3); /* blue-ish hover shadow */
+}
+
+/* Section Title */
+#cart h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Cart Items */
+#order-items {
+  max-height: 200px; /* reduce height to make box compact */
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+.ordered-item {
+  background: #faf5e4;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* 3D Hover effect on each item */
+.ordered-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.2); /* blue-ish shadow */
+}
+
+/* Total Amount */
+#total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+/* Input Fields */
+#order input,
+#order textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+#order input:focus,
+#order textarea:focus {
+  border-color: #25d366;
+  box-shadow: 0 0 8px rgba(37, 211, 102, 0.4);
+}
+
+/* WhatsApp Order Button */
+#whatsapp-order {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: #25d366;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: bold;
+  padding: 12px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 15px;
+}
+
+/* Hover effect on WhatsApp button */
+#whatsapp-order:hover {
+  background: #20b756;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+/* Scrollbar styling for cart items */
+#order-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+#order-items::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+#order-items::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #cart {
+    margin: 20px auto;
+    padding: 20px 15px;
+  }
+  
+  .ordered-item {
+    font-size: 0.95rem;
+  }
+
+  #whatsapp-order {
+    font-size: 1rem;
+  }
+}

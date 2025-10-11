@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="cart.css">
+
+     <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>NutriPlates</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#home" class="text-orange-500" id="NutriPlates">NutriPlates</a>
+        <nav id="navbar">
+            <ul>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#menu">Menu</a></li>
+              <li><a href="#cart">Cart</a></li>
+             <li><a href="#contact">Contact</a></li>
+          
+           
+            </ul>
+        </nav>
+    </header>
+
+    
+<main>
+    <section id="home">
+        <div id="hero-sec">
+            <h1>"Healthy Meals,Happy You"</h1>
+            <p>Homemade meals made with love & hygiene bringing comfort<br> 
+                to your doorstep every day.
+            </p>
+
+            <div id="order-info"> 
+                <a href="#menu" class="bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-orange-600 transition-all duration-300">🍛 See Menu</a>
+                    <a href="https://wa.me/911234567890?text=Hi!%20I%20want%20to%20order." target="_blank" class="bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition-all duration-300" id="order-wp">💬 Order on WhatsApp</a></div>
+        </div>
+
+
+        <!-- Today's Specials -->
+         <div id="special-con">
+            <h2>Today's Specials</h2>
+            <!-- first dish  -->
+
+            <div id="flex-dishes">
+
+                 <div id="dishes">
+               <div id="dish-img">
+                <img src="ankit.com" alt="Paneer Thali">
+            </div>
+               <div id="dish-info">
+                <h3 style="font-size: 20px; padding:10px; font-weight:700;">Special Paneer Thali</h3>
+                <p style="padding: 10px;">A wholesome meal with paneer curry,dal,rice,and roti.</p>
+                <div id="order-price">
+                     <span>₹180</span>
+                <a href="https://wa.me/911234567890?text=Hi!%20I%20want%20to%20order%20the%20Special%20Paneer%20Thali." class="bg-green-500 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">Order Now</a>
+                </div>
+               </div>
+             </div>
+
+              <div id="dishes">
+               <div id="dish-img">
+                <img src="ankit.com" alt="Aloo Thali">
+            </div>
+               <div id="dish-info">
+                <h3 style="font-size: 20px; padding:10px; font-weight:700;">Special Paneer Thali</h3>
+                <p style="padding: 10px;">A wholesome meal with paneer curry,dal,rice,and roti.</p>
+                <div id="order-price">
+                     <span>₹180</span>
+                <a href="https://wa.me/911234567890?text=Hi!%20I%20want%20to%20order%20the%20Special%20Paneer%20Thali." class="bg-green-500 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">Order Now</a>
+                </div>
+               </div>
+             </div>
+
+             
+            
+              <div id="dishes">
+               <div id="dish-img">
+                <img src="ankit.com" alt="saleds">
+            </div>
+               <div id="dish-info">
+                <h3 style="font-size: 20px; padding:10px; font-weight:700;">Special Paneer Thali</h3>
+                <p style="padding:10px;">A wholesome meal with paneer curry,dal,rice,and roti.</p>
+                <div id="order-price">
+                     <span>₹180</span>
+                <a href="https://wa.me/911234567890?text=Hi!%20I%20want%20to%20order%20the%20Special%20Paneer%20Thali." class="bg-green-500 text-white text-sm font-semibold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">Order Now</a>
+                </div>
+               
+               </div>
+             </div>
+            </div>
+
+                
+
+             
+         </div>
+    </section>
+
+
+    <!-- Menu section -->
+     <section id="menu">
+        <div id="container">
+            <h2>Our Full Menu</h2>
+            <div id="menu-filters">
+                <button id="menus-button" data-category="all">All</button>
+                <button id="menus-button" data-category="veg">Veg</button>
+                <button id="menus-button" data-category="sweets">Sweets</button>
+                <button id="menus-button" data-category="saldes">Saleds</button>
+                <button id="menus-button" data-category="combos">Combo</button>
+            </div>
+        </div>
+
+        <!-- Food list  -->
+
+        <!-- veg item -->
+        <div id="food-list">
+
+  <div class="food-card" data-category="veg">
+    <img src="ankit.com" alt="Dal Makhani">
+    <h3>Dal Makhani</h3>
+    <p>Creamy lentils, a timeless classic.</p>
+    <div>
+      <span>₹160</span>
+      <a href="dal-makhani">Order</a>
+    </div>
+  </div>
+
+  <div class="food-card" data-category="sweets">
+    <img src="ankit.com" alt="Gulab Jamun">
+    <h3>Gulab Jamun</h3>
+    <p>Soft, sweet, and soaked in syrup.</p>
+    <div>
+      <span>₹120</span>
+      <a href="gulab-jamun">Order</a>
+    </div>
+  </div>
+
+
+  <div class="food-card" data-category="veg">
+    <img src="ankit.com" alt="Veg pulao">
+    <h3>Veg Pulao</h3>
+    <p>Fragrant rice with mixed vegetables.</p>
+    <div>
+      <span>₹140</span>
+      <a href="gulab-jamun">Order</a>
+    </div>
+  </div>
+
+
+  <div class="food-card" data-category="saleds">
+    <img src="ankit.com" alt="Veg pulao">
+    <h3>Green Saleds</h3>
+    <p>Green saleds with mix fruit.</p>
+    <div>
+      <span>₹180</span>
+      <a href="gulab-jamun">Order</a>
+    </div>
+  </div>
+
+
+
+  <div class="food-card" data-category="combo">
+    <img src="ankit.com" alt="Veg pulao">
+    <h3>Executive Thali</h3>
+    <p>Paneer, Dal, Mix Veg, Rice, Roti, Salad.</p>
+    <div>
+      <span>₹240</span>
+      <a href="gulab-jamun">Order</a>
+    </div>
+  </div>
+
+
+  <div class="food-card" data-category="sweet">
+    <img src="ankit.com" alt="Pastry">
+    <h3>Pastry</h3>
+    <p>Fresh cream,Chocolate pastry</p>
+    <div>
+      <span>₹100</span>
+      <a href="gulab-jamun">Order</a>
+    </div>
+  </div>
+
+
+</div>
+     </section>
+
+
+<!-- Order Section (Cart) -->
+<section id="cart">
+  <h2>Your Order</h2>
+  <div id="order-items"></div>
+  <p>Total: ₹<span id="total">0</span></p>
+
+  <!-- User Details -->
+  <input type="text" id="customer-name" placeholder="Your Name" required>
+  <input type="text" id="customer-phone" placeholder="Phone Number" required>
+  <textarea id="customer-address" placeholder="Address" required></textarea>
+
+  <a href="#" id="whatsapp-order" target="_blank">Order on WhatsApp</a>
+</section>
+
+
+    
+</main>
+
+    <script src="home.js"></script>
+</body>
+</html>
