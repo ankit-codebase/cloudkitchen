@@ -25,7 +25,7 @@
   gap: 15px;
 }
 
-#menus-button {
+.menus-button {
   padding: 10px 25px;
   border: none;
   background-color: #f1f1f1;
@@ -36,13 +36,13 @@
   transition: all 0.3s ease;
 }
 
-#menus-button:hover {
+.menus-button:hover {
   background-color: #ff5722;
   color: #fff;
   transform: translateY(-3px);
 }
 
-#menus-button.active {
+.menus-button.active {
   background-color: #ff5722;
   color: #fff;
 }
