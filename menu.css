@@ -110,7 +110,7 @@
   font-size: 1rem;
 }
 
-.food-card a {
+.food-card button {
   background-color: #22c55E;
   color: #fff;
   padding: 7px 14px;
@@ -120,7 +120,7 @@
   transition: all 0.3s ease;
 }
 
-.food-card a:hover {
+.food-card button:hover {
   background-color: #22c55E;
   transform: scale(1.05);
 }

@@ -23,7 +23,7 @@
             <ul>
             <li> <a href="#home">Home</a></li>
             <li> <a href="#menu">Menu</a></li>
-              <li><a href="#cart">Cart</a></li>
+              <li><a href="#cart">order-section</a></li>
              <li><a href="#contact">Contact</a></li>
           
            
@@ -71,10 +71,17 @@
 
 
 <!-- Order Section (Cart) -->
-<section id="cart">
-  <h2>Your Order</h2>
-  <div id="order-items"></div>
-  <p>Total: ₹<span id="total">0</span></p>
+<section id="order-section">
+   <h2>Your Cart 🛒</h2>
+        <div id="cart">
+            <ul id="cart-items">
+                <!-- Cart items will be added here by JavaScript -->
+            </ul>
+             <p id="empty-cart-message">Your cart is currently empty.</p>
+            <div id="total-price-container" style="display: none;">
+                Total: <span id="total-price">$0.00</span>
+            </div>
+        </div>
 
   <!-- User Details -->
   <input type="text" id="customer-name" placeholder="Your Name" required>

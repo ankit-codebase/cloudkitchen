@@ -1,5 +1,5 @@
 /* Order (Cart) Section */
-#cart {
+#order-section {
   width: 670px;
   height: 640px;
   margin: 50px auto;
@@ -14,13 +14,13 @@
   justify-content: space-between;
 }
 
-#cart h2 {
+#order-section h2 {
   font-size: 1.8rem;
   color: #333;
   margin-bottom: 15px;
 }
 
-#order-items {
+#cart {
   flex: 1;
   background-color: lightyellow;
   border-radius: 12px;
@@ -31,15 +31,15 @@
   overflow-y: auto;
 }
 
-#cart p {
+#order-section p {
   font-size: 1.1rem;
   color: #555;
   font-weight: 600;
   margin: 10px 0 15px;
 }
 
-#cart input,
-#cart textarea {
+#order-section input,
+#order-section textarea {
   width: 100%;
   padding: 12px 14px;
   margin-bottom: 14px;
@@ -50,13 +50,13 @@
   outline: none;
 }
 
-#cart input:focus,
-#cart textarea:focus {
+#order-section input:focus,
+#order-section textarea:focus {
   border-color: #00a651;
   box-shadow: 0 0 6px rgba(0, 166, 81, 0.3);
 }
 
-#cart textarea {
+#order-section textarea {
   height: 100px;
   resize: none;
 }
