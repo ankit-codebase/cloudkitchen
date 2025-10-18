@@ -58,8 +58,8 @@ const dishesData = [
   },
   {
     img: "ankit.com",
-    alt: "Salad Bowl",
-    name: "Healthy Salad Bowl",
+    alt: "Saled Bowl",
+    name: "Healthy Saled Bowl",
     desc: "A refreshing mix of vegetables with tangy dressing.",
     price: "₹120",
     orderLink: "https://wa.me/911234567890?text=Hi!%20I%20want%20to%20order%20the%20Healthy%20Salad%20Bowl."
@@ -150,9 +150,9 @@ const foods = [
   },
   {
     id:"4",
-    category: "salads",
+    category: "saleds",
     img: "ankit.com",
-    name: "Green Salads",
+    name: "Green Saleds",
     desc: "Green salads with mix fruit.",
     price: 180,
     link: "green-salads"
