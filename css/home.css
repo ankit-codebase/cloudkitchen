@@ -1,0 +1,289 @@
+ body {
+     font-family: 'Inter', sans-serif;
+    background-color: #FFF7E8;
+    margin:0;
+     padding-bottom: 200px; 
+        }
+
+#header {
+  display: flex;
+  align-items: center;           /* Vertically center everything */
+  justify-content: space-between;/* Logo left, nav right */
+  padding: 0 60px;               /* Add spacing left-right */
+  height: 64px;
+  background-color: antiquewhite;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+
+#NutriPlates{
+  font-weight: 600;
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;                     
+  list-style: none;
+  margin: 0;
+}
+
+nav a {
+  color: #4B5563;
+  font-size: 16px;
+  font-weight: 100;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* header section finished */
+
+main{
+    padding-top: 80px;;
+}
+section{
+  /* new added */
+min-height: 100vh;   
+}
+#navbar li a.active{
+  /* new added */
+  background-color: orange;
+
+}
+
+
+#hero-sec{
+    margin-top:30px;
+    background-color: #fff5f0;
+    height:340px;
+    padding:80px 16px;
+    margin-bottom: 30px;
+    
+}
+#hero-sec h1{
+  text-align: center;
+   font-size: 60px;
+   color:#1f2937;
+   font-weight: 700;
+}
+#hero-sec p{
+   
+    color:#1f2937;
+    font-size:20px;
+    text-align: center;
+}
+#order-info{
+    text-align: center;
+    margin-top: 22px;
+}
+#order-wp{
+    margin-left: 10px;
+}
+#special-con{
+padding-bottom: 25px;
+}
+#special-con h2{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top:20px;
+ 
+
+}
+#dishes{
+height:390px;
+width: 450px;
+background-color: #f7dccf;
+border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+#dishes:hover{
+  transform: translateY(-10px) scale(1.03); /* 3D lift effect */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2); /* stronger shadow */
+}
+#flex-dishes{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+#dish-img{
+  background-color: lightyellow;
+  height: 200px;
+  width: 100%;
+  
+}
+#order-price{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+/* for resposive we try ai */
+
+
+/* === Responsive Header with Hamburger === */
+#menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ff7a00;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  #navbar ul {
+    display: none;
+    flex-direction: column;
+    background: #fff7f0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  #navbar.show-menu ul {
+    display: flex;
+  }
+
+  #navbar ul li {
+    margin: 10px 0;
+  }
+
+  #navbar ul li a {
+    color: #333;
+    font-size: 15px;
+    text-decoration: none;
+  }
+}
+
+/* === Responsive Hero Section === */
+@media (max-width: 768px) {
+  #home {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  #hero-sec {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  #hero-sec h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  #hero-sec p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  #order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  #order-info a {
+    width: 80%;
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 12px 0;
+  }
+}
+
+/* === Responsive Today’s Specials === */
+#special-con {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#flex-dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#dishes {
+  width: 320px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#dish-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  #todayspecial {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  #flex-dishes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #dishes {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+}
+
+
+  .call-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #28a745; /* green color */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.call-float:hover {
+  transform: scale(1.1);
+  background-color: #1e7e34;
+}
