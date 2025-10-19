@@ -1,6 +1,6 @@
  body {
      font-family: 'Inter', sans-serif;
-    background-color: #FFF7E8;
+    background-color: #F5F5F4;
     margin:0;
      padding-bottom: 200px; 
         }
@@ -11,7 +11,7 @@
   justify-content: space-between;/* Logo left, nav right */
   padding: 0 60px;               /* Add spacing left-right */
   height: 64px;
-  background-color: antiquewhite;
+  background-color: #FFFFFF;
   z-index: 1000;
   position: fixed;
   width: 100%;
@@ -58,7 +58,7 @@ min-height: 100vh;
 
 #hero-sec{
     margin-top:30px;
-    background-color: #fff5f0;
+    background-color:  #F8F8F8;
     height:340px;
     padding:80px 16px;
     margin-bottom: 30px;
@@ -97,7 +97,7 @@ padding-bottom: 25px;
 #dishes{
 height:390px;
 width: 450px;
-background-color: #f7dccf;
+background-color: #F8F8F8;
 border-radius: 12px;
   overflow: hidden;
   padding: 15px;

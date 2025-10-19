@@ -4,7 +4,7 @@
   height: 640px;
   margin: 50px auto;
   padding: 30px 25px;
-  background:  #f6e2d8;
+  background:  #FFFFFF;;
   border-radius: 18px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   font-family: 'Poppins', sans-serif;
@@ -22,7 +22,8 @@
 
 #cart {
   flex: 1;
-  background-color: lightyellow;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D5DB;
   border-radius: 12px;
   padding: 12px;
   margin-bottom: 15px;
@@ -88,7 +89,8 @@
 }
 
 #customer-name,#customer-phone,#customer-address{
-  background-color: lightyellow;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D5DB;
 }
 
 /* use ai for resposive */
@@ -116,6 +118,7 @@
     width: 100%;
     margin-bottom: 10px;
     font-size: 14px;
+    
   }
 
   #whatsapp-order {

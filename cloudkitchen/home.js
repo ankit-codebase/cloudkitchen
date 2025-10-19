@@ -29,25 +29,25 @@ specialCon.appendChild(flexDishes);
 const dishesData = [
   {
     id:"7",
-    img: "ankit.com",
-    alt: "Paneer Thali",
-    name: "Special Paneer Thali",
-    desc: "A wholesome meal with paneer curry, dal, rice, and roti.",
+    img: "image/thekua.png",
+    alt: "Thekua",
+    name: "Special Thekua",
+    desc: "Traditional sweet made from wheat flour, jaggery, and ghee, crispy and flavorful.",
     price: "₹180",
   },
   {
-    img: "ankit.com",
-    alt: "Aloo Thali",
-    name: "Aloo Thali",
-    desc: "Delicious thali with spiced potato curry, rice, dal, and soft rotis.",
+    img: "image/litti.png",
+    alt: "Special Litti Chokha",
+    name:  "Stuffed Litti Chokha",
+    desc: "Litti stuffed with spiced sattu served with smoky mashed chokha, a flavorful Bihari delicacy.(6 pcs)",
     price: "₹150",
     
   },
   {
-    img: "ankit.com",
-    alt: "Saled Bowl",
-    name: "Healthy Saled Bowl",
-    desc: "A refreshing mix of vegetables with tangy dressing.",
+    img: "image/gujiya.png",
+    alt: "Gujiya",
+    name: "Special Gujiya",
+    desc: "Special gujiya stuffed with a rich mix of dry fruits and khoya, perfect for festivals.(6 pcs)",
     price: "₹120",
    
   }

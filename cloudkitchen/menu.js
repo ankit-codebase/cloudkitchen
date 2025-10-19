@@ -6,7 +6,7 @@ const foods = [
   {
     id:"1",
     category: "veg",
-    img: "ankit.com",
+    img: "image/dalmakhani.png",
     name: "Dal Makhani",
     desc: "Creamy lentils, a timeless classic.",
     price: 180,
@@ -15,7 +15,7 @@ const foods = [
   {
     id:"2",
     category: "sweets",
-    img: "ankit.com",
+    img: "image/gulab jamun.png",
     name: "Gulab Jamun",
     desc: "Soft, sweet, and soaked in syrup.",
     price: 120,
@@ -24,7 +24,7 @@ const foods = [
   {
     id:"3",
     category: "veg",
-    img: "ankit.com",
+    img: "image/veg-pulao.png",
     name: "Veg Pulao",
     desc: "Fragrant rice with mixed vegetables.",
     price: 140,
@@ -33,7 +33,7 @@ const foods = [
   {
     id:"4",
     category: "saleds",
-    img: "ankit.com",
+    img: "image/saleds.png",
     name: "Green Saleds",
     desc: "Green salads with mix fruit.",
     price: 180,
@@ -42,7 +42,7 @@ const foods = [
   {
     id:"5",
     category: "combo",
-    img: "ankit.com",
+    img: "image/Executive Thali.png",
     name: "Executive Thali",
     desc: "Paneer, Dal, Mix Veg, Rice, Roti, Salad.",
     price: 240,
@@ -51,7 +51,7 @@ const foods = [
   {
     id:"6",
     category: "sweets",
-    img: "ankit.com",
+    img: "image/pastery.png",
     name: "Pastry",
     desc: "Fresh cream, chocolate pastry.",
     price: 100,
