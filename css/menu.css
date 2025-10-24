@@ -1,14 +1,33 @@
+/* --- RESET & FONT SMOOTHING --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F5F4;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* --- MENU SECTION --- */
 #menu {
   background-color: #F5F5F4;
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
 }
 
 #container {
   max-width: 900px;
   margin: 0 auto;
- 
 }
 
 #container h2 {
@@ -16,13 +35,16 @@
   margin-bottom: 30px;
   color: #222;
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
+/* --- FILTER BUTTONS --- */
 #menu-filters {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
+  margin-bottom: 40px;
 }
 
 .menus-button {
@@ -33,13 +55,16 @@
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.menus-button:hover {
+.menus-button:hover,
+.menus-button:focus-visible {
   background-color: #ff5722;
   color: #fff;
   transform: translateY(-3px);
+  outline: none;
 }
 
 .menus-button.active {
@@ -47,6 +72,7 @@
   color: #fff;
 }
 
+/* --- FOOD GRID --- */
 #food-list {
   display: flex;
   flex-wrap: wrap;
@@ -55,16 +81,16 @@
   padding: 40px 20px;
   background-color: #F5F5F4;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
 }
 
+/* --- FOOD CARD --- */
 .food-card {
   width: 330px;
   background: #F8F8F8;
   border-radius: 15px;
   padding: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -82,19 +108,21 @@
   border-radius: 10px;
   margin-bottom: 12px;
   background-color: lightyellow;
+  display: block;
 }
 
 .food-card h3 {
   font-size: 1.1rem;
   color: #222;
   margin-bottom: 6px;
+  font-weight: 600;
 }
 
 .food-card p {
   font-size: 0.95rem;
   color: #555;
   margin-bottom: 12px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .food-card div {
@@ -117,12 +145,39 @@
   border-radius: 6px;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.food-card button:hover {
+.food-card button:hover,
+.food-card button:focus-visible {
   background-color: #22c55E;
   transform: scale(1.05);
+  outline: none;
 }
 
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 768px) {
+  #container h2 {
+    font-size: 1.8rem;
+  }
 
+  .food-card {
+    width: 90%;
+  }
+
+  #menu-filters {
+    gap: 10px;
+  }
+
+  .menus-button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+
+  #food-list {
+    padding: 20px 10px;
+  }
+}

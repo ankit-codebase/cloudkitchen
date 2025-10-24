@@ -4,7 +4,7 @@
   height: 640px;
   margin: 50px auto;
   padding: 30px 25px;
-  background:  #FFFFFF;;
+  background: #FFFFFF;
   border-radius: 18px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   font-family: 'Poppins', sans-serif;
@@ -12,14 +12,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* Heading */
 #Cart h2 {
   font-size: 1.8rem;
   color: #333;
   margin-bottom: 15px;
 }
 
+/* Cart Box */
 #cart {
   flex: 1;
   background-color: #FFFFFF;
@@ -30,8 +35,11 @@
   box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
   max-height: 260px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scroll for mobile Safari */
+  scrollbar-width: thin; /* Firefox scrollbar fix */
 }
 
+/* Paragraph */
 #Cart p {
   font-size: 1.1rem;
   color: #555;
@@ -39,6 +47,7 @@
   margin: 10px 0 15px;
 }
 
+/* Inputs and Textarea */
 #Cart input,
 #Cart textarea {
   width: 100%;
@@ -49,6 +58,10 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   outline: none;
+  font-family: inherit;
+  -webkit-appearance: none; /* Prevents browser-specific styling */
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #Cart input:focus,
@@ -62,15 +75,17 @@
   resize: none;
 }
 
+/* WhatsApp Button */
 #whatsapp-order {
   display: inline-block;
   background: #25d366;
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
   padding: 12px 20px;
   border-radius: 10px;
   transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
 }
 
 #whatsapp-order:hover {
@@ -78,33 +93,35 @@
   transform: translateY(-3px);
 }
 
-/* Responsive */
-@media (max-width: 720px) {
-  #cart {
-    width: 90%;
-    height: auto;
-    margin: 30px auto;
-    padding: 25px 18px;
-  }
+/* Custom Scrollbar (for WebKit browsers) */
+#cart::-webkit-scrollbar {
+  width: 6px;
+}
+#cart::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
 }
 
-#customer-name,#customer-phone,#customer-address{
+/* Field Backgrounds */
+#customer-name,
+#customer-phone,
+#customer-address {
   background-color: #FFFFFF;
   border: 1px solid #D1D5DB;
 }
-
-/* use ai for resposive */
 
 /* === Responsive Cart Section === */
 @media (max-width: 768px) {
   #Cart {
     width: 95%;
     margin: 20px auto;
-    padding: 15px;
+    padding: 18px;
+    height: auto;
   }
 
   #cart {
     padding: 10px;
+    max-height: none;
   }
 
   #cart-items li {
@@ -118,7 +135,6 @@
     width: 100%;
     margin-bottom: 10px;
     font-size: 14px;
-    
   }
 
   #whatsapp-order {
@@ -132,4 +148,13 @@
     border-radius: 8px;
     text-decoration: none;
   }
+}
+
+/* === Universal Reset for Cross-Browser Consistency === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
