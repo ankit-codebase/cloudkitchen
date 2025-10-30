@@ -7,6 +7,12 @@ const navbar = document.getElementById("navbar");
 
 menuToggle.addEventListener("click", () => {
   navbar.classList.toggle("show-menu");
+
+  if(navbar.classList.contains("show-menu")){
+    setTimeout(()=>{
+      navbar.classList.remove("show-menu");
+    },2000)
+  }
 });
 
 

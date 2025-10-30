@@ -10,6 +10,12 @@ const customerName = document.getElementById("customer-name");
 const customerPhone = document.getElementById("customer-phone");
 const customerAddress = document.getElementById("customer-address");
 
+const cartBar = document.getElementById("cartBar");
+const  cartCount = document.getElementById("cartCount");
+
+
+
+
 let cart = [];
 
 //function to update the cart display
@@ -19,11 +25,16 @@ function updateCart(){
   if(cart.length === 0){
     emptyCartMessage.style.display = "block";
     totalPriceContainer.style.display = "none";
+    cartBar.classList.remove("show"); //remove that car bar
     return;
+    
   }
+   
   emptyCartMessage.style.display = "none";
   totalPriceContainer.style.display ="block";
+   cartBar.classList.add("show"); // show the cart bar
 
+   
   let total = 0;
   cart.forEach((item, index) => {
     const li = document.createElement("li");
@@ -38,6 +49,7 @@ function updateCart(){
   totalPriceEl.textContent = `₹${total}`;
 
 }
+let count = 0;
 
 // Add to cart button event (works for all "Add to Cart" buttons)
 document.body.addEventListener("click", (e) => {
@@ -51,6 +63,11 @@ document.body.addEventListener("click", (e) => {
                     }, 1000);
 
     //
+                    count++;
+                    cartCount.textContent = count; //add count number of cart bar
+    
+
+
 
     const name = card.querySelector("h3").textContent;
     const priceText = card.querySelector(".order-price span")?.textContent || e.target.previousElementSibling.textContent;
